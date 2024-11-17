@@ -11,10 +11,19 @@ public class Array {
             array[i] = scanner.nextInt();
         }
         //array elementlerini bir setirde cap et
-        System.out.print("array elementlerini bir setirde cap et: ");
-        for (int i=0;i<array.length;i++)
-        {
-            System.out.print(array[i]+ "  ");
-        }
+        int min = array[0];
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+            if (array[i] > max) {
+                max = array[i];
 
-    }}
+            }
+
+        }
+        System.out.println("array min element: "+min);
+        System.out.println("array max element: "+max);23
+    }
+}
