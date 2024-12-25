@@ -22,7 +22,6 @@ public class Task2 {
 
 
 
-
 //        int a = x / 1000;
 //        System.out.println(" eded " + a);
 //        int b = (x / 100) % 10;

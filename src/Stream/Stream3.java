@@ -10,11 +10,23 @@ public class Stream3 {
         List<String> stringList= Arrays.asList("alma","armud","heyva");
 
 
-List<List<String>> splitLetters=stringList.stream()
-        .map(s->Arrays.asList(s.split("")))
-        .collect(Collectors.toList());
+//List<List<String>> splitLetters=stringList.stream()
+//        .map(s->Arrays.asList(s.split("")))
+//        .collect(Collectors.toList());
+//        System.out.println(splitLetters);
 
-        System.out.println(splitLetters);
+
+        stringList.stream()
+                .map(a->a.split(""))
+                .toList()
+                .forEach(System.out::println);
+
+List<String> result =stringList.stream()
+                .flatMap(a->Arrays.stream(a.split("")))
+        .toList();
+        System.out.println(result);
+
+
 
 
     }

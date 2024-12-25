@@ -20,5 +20,14 @@ public class Stream4 {
                 .forEach(System.out::println);
 
 
+
+        List<Integer> result=myList.stream()
+                .flatMap(a->a.stream())
+                .toList();
+        System.out.println(result);
+
+
     }
+
+
 }

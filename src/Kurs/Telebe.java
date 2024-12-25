@@ -1,8 +1,11 @@
 package Kurs;
 
+import java.util.ArrayList;
+
 public class Telebe {
     private  String name;
     private  int ID;
+    private ArrayList<Kurs> kurs = new ArrayList<>();
 
     public Telebe(String name, int ID) {
         this.name = name;
@@ -32,4 +35,5 @@ public class Telebe {
                 ", ID=" + ID +
                 '}';
     }
+
 }

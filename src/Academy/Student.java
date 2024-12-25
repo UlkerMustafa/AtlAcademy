@@ -1,8 +1,12 @@
 package Academy;
 
 public class Student extends Academy {
+    public int length;
     private int studentId;
     private String course;
+    private String studentName;
+
+
 
     public Student(int studentId, String course, String name, String address) {
         super(name, address);
@@ -10,9 +14,17 @@ public class Student extends Academy {
         this.course = course;
     }
 
+    public Student(String name, String address) {
+        super(name, address);
+    }
 
+    public String getStudentName() {
+        return studentName;
+    }
 
-
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
 
     public int getStudentId() {
         return studentId;
